@@ -183,26 +183,3 @@ def prendas_cliente(request, nit):
         prenda = Prendas.objects.filter(seller=cliente)
         serializer = PrendaSerializer(prenda, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
-
-# @api_view(['POST'])
-# def crear_prenda(request, nit, pk):
-#    """ Crear una prenda """
-#    try:
-#        cliente = Clientes.objects.get(nit=nit)
-#        articulo = Articulos.objects.get(pk=pk)
-#    except Clientes.DoesNotExist or Articulos.DoesNotExist:
-#        return Response(status=status.HTTP_404_NOT_FOUND)
-#
-#    if request.method == 'POST':
-#        prenda = Prendas.objects.create(garment_number=1010, seller=cliente, item=articulo)
-#        serializer = PrendaSerializer(prenda)
-#        # serializer.modified_date = serializer.start_date
-#        # serializer.expiration_date = serializer.modified_date + timedelta(days=180)
-#        # serializer.debt = serializer.capital_rate * serializer.interes_rate
-#
-#        #prenda = Prendas.objects.create(serializer.data, seller=cliente, item=articulo)
-#
-#        if serializer.is_valid():
-#            serializer.save()
-#            return Response(serializer.data)
-#        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
