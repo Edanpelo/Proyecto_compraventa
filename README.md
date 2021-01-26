@@ -24,6 +24,7 @@ Las urls que se utilizan en esta api son:
 
 - ```http://127.0.0.1:8000/Clientes/``` con el metodo GET se ven todos los clientes y con el metodo POST se crea un nuevo cliente, es requerido enviar un texto en formato JSON como el siguiente:
 
+```
 {
     "nit":1118855062,
     "first_name": "Eddie",
@@ -32,6 +33,7 @@ Las urls que se utilizan en esta api son:
     "email": "eddielondoo@gmail.com",
     "phone": "1110001100"
 }
+```
 
 - ```http://127.0.0.1:8000/Clientes/<int:nit>``` En esta url se aplican operaciones basicas del CRUD, GET <- consultar, PUT <- modificar, DELETE <- eliminar. En PUT es requerido enviar un texto en formato JSON como en el anterior item con la informacion modificada.
 
