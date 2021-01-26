@@ -18,3 +18,5 @@ python manage.py sqlmigrate api_compraventa 0002 # Crea las sentencias SQL para 
                                                  # ultima migracion de api_compraventa.migrations
 python manage.py runserver
 ```
+## Uso
+
