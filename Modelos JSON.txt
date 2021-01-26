@@ -1,0 +1,35 @@
+--------------------- Crear cliente --------------------- Clientes/
+{
+    "nit":1118855062,
+    "first_name": "Eddie",
+    "last_name": "Perez",
+    "address": "Una Direccion",
+    "email": "eddielondoo@gmail.com",
+    "phone": "1110001100"
+}
+
+--------------------- Crear articulo -------------------- Articulos/
+{
+    "name": "Cadena lisa",
+    "category": "Cadena"
+    "price": 300000,
+    "for_sale":0
+}
+
+--------------------- Comprar articulo ------------------ En_venta/
+{
+    "order_number": 1010,
+    "sale_date": "2020-12-05",
+    "buyer": 1,
+    "sold_item": 2
+}
+
+--------------------- Crear prenda ---------------------- Prendas/
+{
+    "garment_number": 10,
+    "start_date": "2020-10-12",
+    "interest_rate": 0.1,
+    "seller": 2,
+    "item": 1,
+    "expired": 0
+}
