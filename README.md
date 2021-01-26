@@ -2,7 +2,8 @@
 
 ## Instalación
 
-Es necesario contar con python3 y el paquete [pip](https://pip.pypa.io/en/stable/) para instalar los requerimientos:
+Es necesario contar con python3 y el paquete [pip](https://pip.pypa.io/en/stable/) para instalar los 
+requerimientos: (en este proyecto se esta trabajando con la base de datos por defecto SQLite3 que no requiere instalación externa)
 
 ```bash
 pip install -r requirements.txt
