@@ -2,8 +2,7 @@
 
 ## Instalación
 
-Es necesario contar con python3 y el paquete [pip](https://pip.pypa.io/en/stable/) para instalar los 
-requerimientos: (en este proyecto se esta trabajando con la base de datos por defecto SQLite3 que no requiere instalación externa)
+Es necesario contar con python3 y el paquete [pip](https://pip.pypa.io/en/stable/) para instalar los requerimientos: (en este proyecto se esta trabajando con la base de datos por defecto SQLite3 que no requiere instalación externa)
 
 ```bash
 pip install -r requirements.txt
@@ -21,3 +20,7 @@ python manage.py runserver
 ```
 ## Uso
 
+Las urls que se utilizan en esta api son:
+http://127.0.0.1:8000/Clientes/
+
+http://127.0.0.1:8000/En_venta/comprar
