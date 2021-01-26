@@ -35,7 +35,7 @@ Las urls que se utilizan en esta api son:
 }
 ```
 
-- ```http://127.0.0.1:8000/Clientes/<int:nit>``` En esta url se aplican operaciones basicas del CRUD, GET <- consultar, PUT <- modificar, DELETE <- eliminar. En PUT es requerido enviar un texto en formato JSON como en el anterior item con la informacion modificada.
+- ```http://127.0.0.1:8000/Clientes/<int:nit>``` En esta url se aplican operaciones basicas del CRUD, GET<-consultar, PUT<-modificar, DELETE<-eliminar. En PUT es requerido enviar un texto en formato JSON como en el anterior item con la informacion modificada.
 
 - ```http://127.0.0.1:8000/Clientes/<int:nit>/Compras``` En esta url se observa una lista de los productos comprados por el cliente.
 
@@ -52,10 +52,46 @@ Las urls que se utilizan en esta api son:
 }
 ```
 
-- ```http://127.0.0.1:8000/Articulos/<int:pk>``` En esta url se aplican operaciones basicas del CRUD, GET <- consultar, PUT <- modificar, DELETE <- eliminar. En PUT es requerido enviar un texto en formato JSON como en el anterior item con la informacion modificada.
+- ```http://127.0.0.1:8000/Articulos/<int:pk>``` En esta url se aplican operaciones basicas del CRUD, GET<-consultar, PUT<-modificar, DELETE<-eliminar. En PUT es requerido enviar un texto en formato JSON como en el anterior item con la informacion modificada.
 
+- ```http://127.0.0.1:8000/En_venta/``` En esta url se ven todos los productos en venta con el metodo GET, al usar el metodo POST se vende un articulo al comprador e internamente se aplica un filtro para validar que el articulo si se encuentra en venta. (Para el metodo POST es requerido un texto en formato JSON):
 
+```
+{
+    "order_number": 1010,
+    "sale_date": "2020-12-05",
+    "buyer": 1,
+    "sold_item": 2
+}
+```
 
+- ```http://127.0.0.1:8000/Prendas/``` Aquí se pueden ver todas las prendas con GET y se pueden crear nuevas prendas con POST y el siguiente texto en formato JSON:
 
+```
+{
+    "garment_number": 10,
+    "start_date": "2020-10-12",
+    "interest_rate": 0.1,
+    "seller": 2,
+    "item": 1,
+    "expired": 0
+}
+```
 
-http://127.0.0.1:8000/En_venta/comprar
+  Al terminar el request, la api entrega un response con la siguiente información:
+  
+```
+{
+    "id": 4
+    "garment_number": 10,
+    "start_date": "2020-10-12",
+    "modified_date": "2020-10-12",
+    "expiration_date": "2021-04-10",
+    "interest_rate": 0.1,
+    "capital_debt": 300000,
+    "debt": 0,
+    "seller": 2,
+    "item": 1,
+    "expired": 0
+}
+```
