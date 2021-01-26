@@ -33,13 +33,13 @@ Las urls que se utilizan en esta api son:
     "phone": "1110001100"
 }
 
-- http://127.0.0.1:8000/Clientes/<int:nit> En esta url se aplican operaciones basicas del CRUD, GET <- consultar, PUT <- modificar, DELETE <- eliminar. En PUT es requerido enviar un texto en formato JSON como en el anterior item con la informacion modificada.
+- ```http://127.0.0.1:8000/Clientes/<int:nit>``` En esta url se aplican operaciones basicas del CRUD, GET <- consultar, PUT <- modificar, DELETE <- eliminar. En PUT es requerido enviar un texto en formato JSON como en el anterior item con la informacion modificada.
 
-- http://127.0.0.1:8000/Clientes/<int:nit>/Compras En esta url se observa una lista de los productos comprados por el cliente.
+- ```http://127.0.0.1:8000/Clientes/<int:nit>/Compras``` En esta url se observa una lista de los productos comprados por el cliente.
 
-- http://127.0.0.1:8000/Clientes/<int:nit>/Prendas En esta url se observa una lista de las prendas del cliente.
+- ```http://127.0.0.1:8000/Clientes/<int:nit>/Prendas``` En esta url se observa una lista de las prendas del cliente.
 
-- http://127.0.0.1:8000/Articulos/ con el metodo GET se ven todos los articulos y con el metodo POST se crea un nuevo articulo, es requerido enviar un texto en formato JSON como el siguiente:
+- ```http://127.0.0.1:8000/Articulos/``` con el metodo GET se ven todos los articulos y con el metodo POST se crea un nuevo articulo, es requerido enviar un texto en formato JSON como el siguiente:
 
 {
     "name": "Cadena lisa",
@@ -48,7 +48,7 @@ Las urls que se utilizan en esta api son:
     "for_sale":0
 }
 
-- http://127.0.0.1:8000/Articulos/<int:pk> En esta url se aplican operaciones basicas del CRUD, GET <- consultar, PUT <- modificar, DELETE <- eliminar. En PUT es requerido enviar un texto en formato JSON como en el anterior item con la informacion modificada.
+- ```http://127.0.0.1:8000/Articulos/<int:pk>``` En esta url se aplican operaciones basicas del CRUD, GET <- consultar, PUT <- modificar, DELETE <- eliminar. En PUT es requerido enviar un texto en formato JSON como en el anterior item con la informacion modificada.
 
 
 
